@@ -1,0 +1,77 @@
+*  { 
+    margin:0px;
+    padding:0px;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 62.5%;
+}
+
+h1 {
+    font-weight: 800;
+    font-size: 4rem;
+    text-align: center;
+}
+
+.degrade {
+    background: linear-gradient(150deg, #574bcd 15%, #2999ad 30%, #41e976 100%);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+}
+
+header, main, footer {
+    display: flex;
+    flex-direction: column;
+    width:100%;
+    font-size: 1rem;
+    font-weight: 300;
+    overflow: hidden;
+}
+
+#login {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    line-height: 30px;
+    padding: 5px 20px;
+}
+
+#login svg {
+    margin: 3px 5px;
+}
+
+footer, nav {
+    height: 8vh;
+    min-height: 60px;
+}
+
+nav {
+    background-color:#2999ad;
+}
+
+main {
+    padding: 0px 4%;
+    height: calc(84vh - 40px);
+}
+
+#mensaje {
+    font-size: 2.2rem;
+    text-align: center;
+}
+
+footer {
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: #574bcd;
+    font-size: 1rem;
+    font-weight: 500;
+    color: white;
+}
+
+#alumno + img {
+    margin-left: 40px;
+}
