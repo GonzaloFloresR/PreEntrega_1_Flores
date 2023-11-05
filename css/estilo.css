@@ -57,6 +57,12 @@ main {
     height: calc(84vh - 40px);
 }
 
+main img {
+    width: 30%;
+    height: auto;
+    margin: auto;
+}
+
 #mensaje {
     font-size: 2.2rem;
     text-align: center;

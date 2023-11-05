@@ -2,11 +2,13 @@
 let validarNombre = () => {
     let nombre = prompt("Por favor ingresar su nombre");
     nombre = nombre.trim();
-    
-    while (nombre === ""){
-        alert("Nombre no ingresado");
-        nombre = prompt("Por favor ingresar su nombre");
+    let regExp = /\d/; //La expresión regular /\d/ verifica si una cadena contiene al menos un dígito (0-9).
+    let tieneNumeros = regExp.test(nombre);
+    while (nombre === "" || tieneNumeros ){
+        if(nombre === ""){ alert("Nombre no ingresado");}else{ alert("Nombre ingresado con numeros");}
+        nombre = prompt("Por favor ingresar su nombre correctamente y sin numeros");
         nombre = nombre.trim();
+        tieneNumeros = regExp.test(nombre);
     } 
     return nombre;
 };
@@ -15,9 +17,9 @@ let validarNombre = () => {
 let validarEdad = () => {
     let edad = parseInt(prompt("Por favor ingresar su edad"));
 
-    while (isNaN(edad)){
-        alert("Edad no ingresada");
-        edad = parseInt(prompt("Por favor ingresar su edad"));
+    while (isNaN(edad) || edad < 18){
+        if(edad < 18) {alert("Debe ser mayor a 18 años");} else {alert("Edad no ingresada correctamente");}
+        edad = parseInt(prompt('Por favor ingresar su edad "solo numeros" y debe ser mayor de 18 años'));
     } 
     return edad;
 };
