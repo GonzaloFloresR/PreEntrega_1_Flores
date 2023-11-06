@@ -11,12 +11,12 @@ body {
 
 h1 {
     font-weight: 800;
-    font-size: 4rem;
+    font-size: calc(2rem + 2vw);
     text-align: center;
 }
 
 .degrade {
-    background: linear-gradient(150deg, #574bcd 15%, #2999ad 30%, #41e976 100%);
+    background: linear-gradient(150deg, #574bcd 25%, #2999ad 30%, #41e976 100%);
     -webkit-text-fill-color: transparent;
     -webkit-background-clip: text;
     background-clip: text;
@@ -26,7 +26,7 @@ header, main, footer {
     display: flex;
     flex-direction: column;
     width:100%;
-    font-size: 1rem;
+    font-size: calc(0.7rem + 0.5vw);
     font-weight: 300;
     overflow: hidden;
 }
@@ -58,26 +58,28 @@ main {
 }
 
 main img {
-    width: 30%;
+    width: calc(15rem + 15vw);
     height: auto;
     margin: auto;
 }
 
 #mensaje {
-    font-size: 2.2rem;
+    font-size: calc(1rem + 1vw);
     text-align: center;
 }
 
 footer {
-    flex-direction: row;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     background-color: #574bcd;
-    font-size: 1rem;
     font-weight: 500;
     color: white;
 }
 
-#alumno + img {
-    margin-left: 40px;
+#footer_icon img {
+
+    width: 35px;
+    height: auto;
+    margin: -14px 0px;
 }
